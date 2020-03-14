@@ -1,4 +1,4 @@
-# Hello, I have created a project that aims to identify people after a peel.
+# Hello, I have created a script that aims to identify people after a peel.
 
 # Asking peel
 peel = input('Please provide your peel: ')
