@@ -41,30 +41,15 @@ if month1 <= 12:
     age = 2020 - year2
 
 # Assigns a specific number to the specified month
-    if month1 == 1:
-        print('You was born in', year2, 'in', day1, (list2[0]))
-    elif month1 == 2:
-        print('You was born in', year2, 'in', day1, (list2[1]))
-    elif month1 == 3:
-        print('You was born in', year2, 'in', day1, (list2[2]))
-    elif month1 == 4:
-        print('You was born in', year2, 'in', day1, (list2[3]))
-    elif month1 == 5:
-        print('You was born in', year2, 'in', day1, (list2[4]))
-    elif month1 == 6:
-        print('You was born in', year2, 'in', day1, (list2[5]))
-    elif month1 == 7:
-        print('You was born in', year2, 'in', day1, (list2[6]))
-    elif month1 == 8:
-        print('You was born in', year2, 'in', day1, (list2[7]))
-    elif month1 == 9:
-        print('You was born in', year2, 'in', day1, (list2[8]))
-    elif month1 == 10:
-        print('You was born in', year2, 'in', day1, (list2[9]))
-    elif month1 == 11:
-        print('You was born in', year2, 'in', day1, (list2[10]))
-    elif month1 == 12:
-        print('You was born in', year2, 'in', day1, (list2[11]))
+    month3 = month1 - 1
+
+    print('You was born in', year2, 'in', day1, (list2[month3]))
+
+    # Checks whether a person is a woman or a man
+    if sex1 % 2 == 0:
+        print('You have', age, "year's old and you are woman")
+    else:
+        print('You have', age, "year's old and you are man")
 
     # Checks whether a person is a woman or a man
     if sex1 % 2 == 0:
@@ -80,31 +65,9 @@ else:
     if month1 > 12:
          year3 = year1 + 2000
          age1 = 2020 - year3
-         if month1 % 20 == 1:
-             print('You was born in', year3, 'in', day1, (list2[0]))
-         elif month1 % 20 == 2:
-             print('You was born in', year3, 'in', day1, (list2[1]))
-         elif month1 % 20 == 3:
-             print('You was born in', year3, 'in', day1, (list2[2]))
-         elif month1 % 20 == 4:
-             print('You was born in', year3, 'in', day1, (list2[3]))
-         elif month1 % 20 == 5:
-             print('You was born in', year3, 'in', day1, (list2[4]))
-         elif month1 % 20 == 6:
-             print('You was born in', year3, 'in', day1, (list2[5]))
-         elif month1 % 20 == 7:
-             print('You was born in', year3, 'in', day1, (list2[6]))
-         elif month1 % 20 == 8:
-             print('You was born in', year3, 'in', day1, (list2[7]))
-         elif month1 % 20 == 9:
-             print('You was born in', year3, 'in', day1, (list2[8]))
-         elif month1 % 20 == 10:
-             print('You was born in', year3, 'in', day1, (list2[9]))
-         elif month1 % 20 == 11:
-             print('You was born in', year3, 'in', day1, (list2[10]))
-         elif month1 % 20 == 12:
-             print('You was born in', year3, 'in', day1, (list2[11]))
-         if sex1 % 2 == 0:
-             print('You have', age1, "year's old and you are woman")
-         else:
-             print('You have', age1, "year's old and you are man")
+         month4 = month1 - 21
+    print('You was born in', year3, 'in', day1, (list2[month4]))
+    if sex1 % 2 == 0:
+        print('You have', age1, "year's old and you are woman")
+    else:
+        print('You have', age1, "year's old and you are man")
